@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "PwnYY7lFHFVYFqGLsluJ0wYeYsnyZMjuCX+sqF1tLtRrEc46tOAuk4LhpwZ5uZN5ke36M4rYBC/3OjBvpZawtw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emi94\\source\\repos\\ProyectoCloud\\AppCrud\\ollamaAI.Integration\\OllamaProject\\OllamaProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emi94\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\emi94\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\emi94\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\emi94\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\emi94\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\emi94\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

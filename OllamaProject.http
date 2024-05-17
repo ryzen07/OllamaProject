@@ -1,0 +1,7 @@
+@OllamaProject_HostAddress = https://localhost:7165
+@OllamaProject_HostAddress = http://localhost:5239
+
+GET {{OllamaProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

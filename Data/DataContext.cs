@@ -16,6 +16,5 @@ namespace OllamaProject.Data
         public DbSet<Respuesta> Respuesta { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Prompt> Prompt { get; set; }
-
     }
 }

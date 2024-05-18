@@ -135,3 +135,6 @@ C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaPro
 C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\obj\Debug\net8.0\OllamaProject.sourcelink.json
+C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\bin\Debug\net8.0\MailKit.dll
+C:\Users\emi94\source\repos\ProyectoCloud\AppCrud\ollamaAI.Integration\OllamaProject\bin\Debug\net8.0\MimeKit.dll

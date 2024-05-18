@@ -9,3 +9,12 @@ Accept: application/json
 GET {{OllamaProject_HostAddress}}/weatherforecast
 
 ###
+
+POST {{OllamaProject_HostAddress}}/api/email
+Content-Type: application/json
+
+{
+  //EmailDTO
+}
+
+###

@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using OllamaProject.Data;
+using OllamaProject.Entities;
+using OllamaProject.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +18,9 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-//builder.Services.AddScoped<DataContext>(options =>)
+builder.Services.AddTransient<IMessage, Message>();
+
+builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection("GmailSettings"));
 
 var app = builder.Build();
 

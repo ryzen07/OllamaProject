@@ -5,3 +5,7 @@ GET {{OllamaProject_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{OllamaProject_HostAddress}}/weatherforecast
+
+###

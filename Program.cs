@@ -22,6 +22,17 @@ builder.Services.AddTransient<IMessage, Message>();
 
 builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection("GmailSettings"));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PolicyCors", builder =>
+    {
+        builder.WithOrigins("http://localhost:5208")
+               .AllowAnyMethod()
+               .AllowAnyHeader()
+               .AllowCredentials();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +43,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("PolicyCors");
 
 app.UseAuthorization();
 

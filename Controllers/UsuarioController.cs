@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OllamaProject.Data;
+using OllamaProject.DTO;
 using OllamaProject.Entities;
+using OllamaProject.Services;
 
 namespace OllamaProject.Controllers
 {
@@ -11,9 +13,11 @@ namespace OllamaProject.Controllers
     public class UsuarioController : ControllerBase
     {
         private readonly DataContext _dbContext;
-        public UsuarioController(DataContext dbContext)
+        private readonly IMessage _emailService;
+        public UsuarioController(DataContext dbContext, IMessage emailService)
         {
             _dbContext = dbContext;
+            _emailService = emailService;
         }
 
         [HttpGet]
@@ -69,22 +73,14 @@ namespace OllamaProject.Controllers
                 return Ok(res);
             }
         }
-
-        [HttpDelete]
-        [Route("Eliminar/id:int")]
-        public async Task<IActionResult> Eliminar(int id)
+        [HttpPost]
+        [Route("EnviarMail")]
+        public IActionResult SendEmail(SendEmailRequest request)
         {
-            var res = await _dbContext.Usuario.FindAsync(id);
-            if (res == null)
-            {
-                return BadRequest("No existe el usuario");
-            }
-            else
-            {
-                _dbContext.Usuario.Remove(res);
-                await _dbContext.SaveChangesAsync();
-                return Ok(res);
-            }
+            _emailService.SendEmail(request.Subject, request.Body, request.to);
+            return Ok();
         }
     }
+
 }
+
